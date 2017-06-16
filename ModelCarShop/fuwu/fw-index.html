@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!--<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">-->
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link href="../css/examples-css/fw-index.css" rel="stylesheet" />
+		<link href="../shangcheng/sc-index-mange-botton/iconfont.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div class="mui-input-row mui-search" style="margin: 10px 5px -5px 5px">
+			<input type="search" class="mui-input-clear " placeholder="搜索">
+		</div>
+		
+		<div class="mui-content" style="display:none;">
+			<ul class="mui-table-view mui-table-view-chevron">
+				<li id="switch" class="mui-table-view-cell">
+					定时轮播
+					<div class="mui-switch">
+						<div class="mui-switch-handle"></div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		
+		<div id="slider" class="mui-slider" style="">
+			<div class="mui-slider-group mui-slider-loop">
+				<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="../images/yuantiao.jpg">
+					</a>
+				</div>
+				<!-- 第一张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="../images/shuijiao.jpg">
+					</a>
+				</div>
+				<!-- 第二张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="../images/muwu.jpg">
+					</a>
+				</div>
+				<!-- 第三张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="../images/cbd.jpg">
+					</a>
+				</div>
+				<!-- 第四张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="../images/yuantiao.jpg">
+					</a>
+				</div>
+				<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="../images/shuijiao.jpg">
+					</a>
+				</div>
+			</div>
+			<div class="mui-slider-indicator">
+				<div class="mui-indicator mui-active"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator"></div>
+			</div>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			mui.init({
+				swipeBack:true //启用右滑关闭功能
+			});
+			var slider = mui("#slider");
+//			document.getElementById("switch").addEventListener('toggle', function(e) {
+//				if (e.detail.isActive) {
+					slider.slider({
+						interval: 5000
+					});
+//				} else {
+//					slider.slider({
+//						interval: 0
+//					});
+//				}
+//			});
+		</script>
+		
+		<table width="100%" border="0" class="subtitle-tab">
+			<tr>
+				<td height="35">
+					&nbsp;&nbsp;&nbsp;常用服务
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="subtitle">
+						<div>
+							<span class="mui-icon iconfont icon-zhengchefuwu"></span>
+							<br />整车
+						</div>
+						<div>
+							<span class="mui-icon iconfont icon-jin"></span>
+							<br />
+							金服
+						</div>
+						<div>
+							<span class="mui-icon iconfont icon-fuwu-02"></span>
+							<br />
+							救援
+						</div>
+						<div>
+							<span class="mui-icon iconfont icon-daolujiuyuan"></span>
+							<br />
+							维修
+						</div>
+						<div>
+							<span class="mui-icon iconfont icon-shangcheng"></span>
+							<br />
+							商城
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr height="8" class="opacitys">
+				<td></td>
+			</tr>
+			<tr>
+				<td height="41">
+					&nbsp;&nbsp;&nbsp;我的消息
+					<span class="mui-icon mui-icon-forward list-cell-right"></span>
+				</td>
+			</tr>
+			<tr>
+				<td height="41" style="color: #777777;">
+					<div class="message_div_a">您有100条未读消息</div>
+					<div class="message_div_b">100</div>
+				</td>
+			</tr>
+			<tr height="8" class="opacitys">
+				<td></td>
+			</tr>
+			<tr>
+				<td height="100" class="tr_td3">
+					<div class="tr_td3_div0 border_right">
+						<div class="tr_td3_div1">
+							<p class="p1">发布车源</p>
+							<p class="p2">推送全区车商</p>
+						</div>
+						<div class="tr_td3_div2">
+							<img src="../images/cx4.jpg" />
+						</div>
+					</div>
+					<div class="tr_td3_div0">
+						<div class="tr_td3_div1">
+							<p class="p1">发布其他</p>
+							<p class="p2">推送全区车商</p>
+						</div>
+						<div class="tr_td3_div2">
+							<img src="../images/cx4.jpg" />
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr height="8" class="opacitys">
+				<td></td>
+			</tr>
+			<tr>
+				<td class="tr_td4">
+					<div class="tr_td4_div">
+						<img src="../images/cx4.jpg" />
+					</div>
+				</td>
+			</tr>
+		</table>
+		<br />
+	</body>
+
+</html>

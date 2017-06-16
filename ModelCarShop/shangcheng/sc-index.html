@@ -1,0 +1,290 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<link href="../css/examples-css/sc-index.css" rel="stylesheet" />
+		<link href="sc-index-mange-botton/iconfont.css" rel="stylesheet" />
+		<!--App自定义的css-->
+		<!--<link rel="stylesheet" type="text/css" href="../css/app.css" />-->
+	</head>
+
+	<body>
+		<!--搜索-->
+		<div class="mui-input-row mui-search" style="margin: 10px 5px -5px 5px">
+			<input type="search" class="mui-input-clear " placeholder="搜索">
+		</div>
+		
+		<!--选项版-->
+		<div class="mui-content">
+			<ul class="mui-table-view" style="display: none;">
+				<li class="mui-table-view-cell">
+					循环
+					<div id="Gallery_Toggle" class="mui-switch">
+						<div class="mui-switch-handle"></div>
+					</div>
+				</li>
+			</ul>
+			<div id="Gallery" class="mui-slider" style="">
+				<div class="mui-slider-group">
+					<div class="mui-slider-item">
+						<ul class="mui-table-view mui-grid-view mui-grid-9">
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="mui-icon iconfont icon-meishi"></span>
+									<div class="mui-media-body">美食</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="mui-icon iconfont icon-dianying">
+										<span class="mui-badge">5</span>
+									</span>
+									<div class="mui-media-body">电影</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="mui-icon iconfont icon-jiudian"></span>
+									<div class="mui-media-body">酒店</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="mui-icon iconfont icon-ktv"></span>
+									<div class="mui-media-body">KTV</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="mui-icon iconfont icon-youhui"></span>
+									<div class="mui-media-body">今日新单</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="mui-icon iconfont icon-zhoubianyou"></span>
+									<div class="mui-media-body">周边游</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="mui-icon iconfont icon-huochepiaodingdan"></span>
+									<div class="mui-media-body">火车票</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="mui-icon iconfont icon-waimai"></span>
+									<div class="mui-media-body">外卖</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="mui-slider-item">
+						<ul class="mui-table-view mui-grid-view mui-grid-9">
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="mui-icon mui-icon-home"></span>
+									<div class="mui-media-body">Home</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+								<a href="#">
+									<span class="mui-icon mui-icon-email"><span class="mui-badge">5</span></span>
+									<div class="mui-media-body">Email</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+				<br />
+				<div class="mui-slider-indicator" style="bottom: 0;">
+					<div class="mui-indicator mui-active"></div>
+					<div class="mui-indicator"></div>
+				</div>
+			</div>
+		</div>
+		
+		<!--广告-->
+		<table border="0" width="100%" style="margin-top: 10px;background-color: #FFFFFF;">
+			<tr height="80">
+				<td rowspan="4" class="table-tr-td-a">
+					<div class="border_right_n">
+						<img src="../images/shuijiao.jpg">
+					</div>
+				</td>
+				<td style="font-size: 13px;">
+					<span>家猫出售全场优惠劵</span><br/>
+					<span style="color: #CF2D28;">9.5折</span>
+					<span class="iconfont icon-zhekou"></span>
+				</td>
+				<td align="right" class="table-tr-td-a" style="">
+					<img src="../images/cx4.jpg">
+				</td>
+			</tr>
+		</table>
+		
+		<!--商品列表-->
+		<ul class="mui-table-view ul_sp_list">
+				<li class="">
+					<a href="javascript:;">
+						<table border="0" style="margin: 0 15px;">
+								<tr>
+									<td rowspan="4" class="table-tr-td-a">
+										<span class="iconfont icon-mianyuyue icon-mianyuyue-position"></span>
+										<img src="../images/shuijiao.jpg" />
+									</td>
+								</tr>
+								<tr>
+									<td class="span-fonts">
+										家猫出售
+									</td>
+									<td align="right" class="span-font">
+										<span><100m</span>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2" class="span-font" >
+										<span>想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.</span>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2" class="span-font">
+										<span>100元</span>&nbsp;&nbsp;
+										<strike>105元</strike>&nbsp;&nbsp;
+										<strike style="float: right;">已售出100件</strike>
+									</td>
+								</tr>
+						</table>
+					</a>
+				</li>
+				<li class="">
+					<a href="javascript:;">
+						<table border="0" style="margin: 0 15px;">
+								<tr>
+									<td rowspan="4" class="table-tr-td-a">
+										<span class="iconfont icon-mianyuyue icon-mianyuyue-position"></span>
+										<img src="../images/shuijiao.jpg">
+									</td>
+								</tr>
+								<tr>
+									<td class="span-fonts">
+										家猫出售
+									</td>
+									<td align="right" class="span-font">
+										<span><100m</span>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2" class="span-font" >
+										<span>想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.</span>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2" class="span-font">
+										<span>100元</span>&nbsp;&nbsp;
+										<strike>105元</strike>&nbsp;&nbsp;
+										<strike style="float: right;">已售出100件</strike>
+									</td>
+								</tr>
+						</table>
+					</a>
+				</li>
+				<li class="">
+					<a href="javascript:;">
+						<table border="0" style="margin: 0 15px;">
+								<tr>
+									<td rowspan="4" class="table-tr-td-a">
+										<span class="iconfont icon-mianyuyue icon-mianyuyue-position"></span>
+										<img src="../images/shuijiao.jpg">
+									</td>
+								</tr>
+								<tr>
+									<td class="span-fonts">
+										家猫出售
+									</td>
+									<td align="right" class="span-font">
+										<span><100m</span>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2" class="span-font">
+										<span>想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.</span>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2" class="span-font">
+										<span>100元</span>&nbsp;&nbsp;
+										<strike>105元</strike>&nbsp;&nbsp;
+										<strike style="float: right;">已售出100件</strike>
+									</td>
+								</tr>
+						</table>
+					</a>
+				</li>
+			</ul>
+			<br />
+	</body>
+	<script src="../js/mui.min.js"></script>
+	<script>
+		mui.init();
+		
+		mui.ready(function() {
+			var slider = document.getElementById('Gallery');
+			var group = slider.querySelector('.mui-slider-group');
+			var items = mui('.mui-slider-item', group);
+			//克隆第一个节点
+			var first = items[0].cloneNode(true);
+			first.classList.add('mui-slider-item-duplicate');
+			//克隆最后一个节点
+			var last = items[items.length - 1].cloneNode(true);
+			last.classList.add('mui-slider-item-duplicate');
+			//处理是否循环逻辑，若支持循环，需支持两点：
+			//1、在.mui-slider-group节点上增加.mui-slider-loop类
+			//2、重复增加2个循环节点，图片顺序变为：N、1、2...N、1
+			var sliderApi = mui(slider).slider();
+
+			function toggleLoop(loop) {
+					if (loop) {
+						group.classList.add('mui-slider-loop');
+						group.insertBefore(last, group.firstChild);
+						group.appendChild(first);
+						sliderApi.refresh();
+						sliderApi.gotoItem(0);
+					} else {
+						group.classList.remove('mui-slider-loop');
+						group.removeChild(first);
+						group.removeChild(last);
+						sliderApi.refresh();
+						sliderApi.gotoItem(0);
+					}
+				}
+				//按下“循环”按钮的处理逻辑；
+			document.getElementById('Gallery_Toggle').addEventListener('toggle', function(e) {
+				var loop = e.detail.isActive;
+				toggleLoop(loop);
+			});
+		});
+	</script>
+	<script>
+		mui.init({
+			swipeBack:true //启用右滑关闭功能
+		});
+		mui('.ul_sp_list').on('tap', 'a', function(e) {
+			mui.openWindow({
+			    url: 'shop-index.html'
+			});
+		});
+	</script>
+	</body>
+
+</html>

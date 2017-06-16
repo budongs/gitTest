@@ -1,0 +1,49 @@
+.table-content-1{
+	background-color: #008000;color: #FFFFFF;font-size: 15px;
+}
+.shop-image{
+	margin-left: 15px;border: 3px #DDDDDD solid;border-radius: 30px;width: 60px;height: 60px;vertical-align: middle;
+}
+.table-content-1 .td1{
+	padding: 0 8px;
+}
+.table-content-1 .td1 span{
+	font-size: 14px;
+}
+.table-content-1 .td2 div{
+	border-left: 0.7px #FFFFFF solid;padding: 0 15px;
+}
+.table-content-1 .td2 a{
+	color: #FFFFFF;
+}
+.the-menu-main{
+	background-color: #FFFFFF;border-bottom: 0.7px #CCCCCC solid;height: 45px;text-align: center;font-size: 15px;color: #666666;
+}
+.the-menu-main .select-yes{
+	border-bottom: 2px #008000 solid;color: #008000;
+}
+
+#the-menu-main-a{
+	background-color: #FFFFFF;width: 100%; overflow: hidden;
+}
+#the-menu-main-a ul{
+	list-style-type:none;margin: 0;padding: 0;
+}
+#the-menu-main-a .menu-left, #the-menu-main-a .menu-right{
+	float: left; height: 300px;overflow-y:auto;
+}
+.menu-left{
+	border-right: 0.7px #CCCCCC solid;width: 30%;background-color:#EDEDED;
+}
+.menu-left li{
+	min-height: 50px;border-bottom: 0.7px #CCCCCC dashed;
+}
+.menu-left .li-select{
+	background-color:#FFFFFF;
+}
+.menu-right{
+	width: 70%;
+}
+.menu-right li{
+	min-height: 50px;border-bottom: 0.7px #CCCCCC solid;
+}

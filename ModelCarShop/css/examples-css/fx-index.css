@@ -1,0 +1,22 @@
+.wd_table0_tr_border{
+	border-top: 0.7px #A3A3A3 solid;border-bottom: 0.7px #A3A3A3 solid;background-color: #FFFFFF;
+	font-size: 15px;
+}
+.wd_table0_tr_border1{
+	border-bottom: 0.7px #EEE8D8 solid;
+}
+.wd_table0_tr_border img{
+	width: 19px;height: 19px;
+}
+.wd_table0_tr_border .img-left{
+	float: left;margin-left: 15px;width: 25px;height: 25px;
+}
+.wd_table0_tr_border a{
+	color: #000000;
+}
+tr:active{
+	background:#F3F3F3;
+}
+.list-cell-right{
+	color: #A3A3A3;float: right;margin-right: 15px;
+}
